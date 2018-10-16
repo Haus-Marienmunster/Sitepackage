@@ -1,0 +1,8 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'EXT:bootstrap_package/Configuration/TypoScript/setup'
+
+######################
+#### Config ####
+######################

@@ -1,0 +1,10 @@
+######################
+#### DEPENDENCIES ####
+######################
+@import 'EXT:bootstrap_package/Configuration/TypoScript/constants'
+
+########################
+### Config           ###
+########################
+@import 'EXT:hotel/Configuration/TypoScript/config'
+
