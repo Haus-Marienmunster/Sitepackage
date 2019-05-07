@@ -46,4 +46,4 @@ page {
 
 [applicationContext == "Development"]
     @import 'EXT:hotel/Configuration/TypoScript/config.development'
-[END]
+[end]

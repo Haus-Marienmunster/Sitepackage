@@ -6,3 +6,5 @@
 ######################
 #### Config ####
 ######################
+page.10.includeCSS.main = EXT:hotel/Resources/Public/Css/main.css
+page.10.includeJSFooter.main = EXT:hotel/Resources/Public/JavaScript/main.js
