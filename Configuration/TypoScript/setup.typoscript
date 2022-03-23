@@ -23,8 +23,4 @@ page {
     includeJSFooterlibs {
 
     }
-
-    includeJSFooter {
-        sitepackage_scripts = EXT:sitepackage/Resources/Public/JavaScript/Dist/scripts.js
-    }
 }
