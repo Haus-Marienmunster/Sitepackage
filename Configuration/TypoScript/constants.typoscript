@@ -1,7 +1,89 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-@import 'EXT:bootstrap_package/Configuration/TypoScript/constants'
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    tracking.google.trackingID = UA-127375241-1
+    preloader.enable = 0
+
+    logo {
+        file = fileadmin/50jahre.png
+        fileInverted = fileadmin/50jahre.png
+        title = Zur Startseite zurückkehren
+        width = 300
+        height = 84
+    }
+
+    theme {
+        copyright.text = Das Haus Marienmünster wird betrieben durch das Lenkerbecker Erholungswerk Schloß Holte e.V. Alle Rechte vorbehalten.
+        socialmedia {
+            enable = 0
+        }
+        language {
+            enable = 0
+        }
+        navigation {
+            type = top
+        }
+        meta {
+            navigationValue = 21, 11
+        }
+        googleFont {
+            font = Roboto
+            weight = 400, 700
+        }
+        cookieconsent {
+            enable = 0
+        }
+    }
+
+    favicon {
+        file = EXT:sitepackage/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:sitepackage/Resources/Private/Partials/Page/
+        templateRootPath = EXT:sitepackage/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/
+        partialRootPath = EXT:sitepackage/Resources/Private/Partials/
+        templateRootPath = EXT:sitepackage/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:sitepackage/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:sitepackage/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+# plugin.bootstrap_package.settings.scss {
+#    primary = #eb3e4a
+#    secondary = #013859
+# }
 
 ########################
 ### Config           ###

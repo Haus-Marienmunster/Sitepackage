@@ -1,16 +1,30 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-@import 'EXT:bootstrap_package/Configuration/TypoScript/setup'
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
 
-######################
-#### Page         ####
-######################
+
+##############
+#### PAGE ####
+##############
 page {
     includeCSS {
-        main = EXT:hotel/Resources/Public/Css/main.css
+        theme = EXT:sitepackage/Resources/Public/Scss/Theme/theme.scss
     }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
     includeJSFooter {
-        main = EXT:hotel/Resources/Public/JavaScript/main.js
+        sitepackage_scripts = EXT:sitepackage/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
